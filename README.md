@@ -47,7 +47,10 @@ When you run this project, you need set the following environment variables:
 
 ## 📝 Anotations
 
-Application hosted in <a href="http://localhost:3000/">http://localhost:3000/</a>.
+Run all the tests with coverage.
+```bash
+go test ./... -coverprofile=coverage.out && ./coverage-ignore.sh && go tool cover -html=coverage.out
+```
 
 ## 🔗 References
 
